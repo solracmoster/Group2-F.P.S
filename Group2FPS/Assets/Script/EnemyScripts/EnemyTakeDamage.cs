@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyTakeDamage : MonoBehaviour {
-
+    public float health = 100;
 	// Use this for initialization
 	void Start () {
 		
@@ -11,11 +11,19 @@ public class EnemyTakeDamage : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(health <= 0)
+        {
+            Die();
+        }
 	}
 
     public void TakeDamage(float damageTaken)
     {
-        Debug.Log("oof");
+        health = health - damageTaken;
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
