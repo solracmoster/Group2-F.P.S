@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 65502676293194902}
   - component: {fileID: 23058299814826728}
   - component: {fileID: 114029305379656284}
+  - component: {fileID: 114949239894175668}
   m_Layer: 0
   m_Name: TV 1
   m_TagString: Untagged
@@ -244,4 +245,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 1822387203971520, guid: e3e65a34bf1ad8048923a3cfe4a1019c,
+    type: 2}
+--- !u!114 &114949239894175668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899120782633596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ceb29b81e9c2d468fde0ae5e2341c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 1822387203971520, guid: af1cd748df998df4084e5c26e8434174,
     type: 2}
