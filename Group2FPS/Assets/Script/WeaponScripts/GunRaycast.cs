@@ -7,18 +7,26 @@ public class GunRaycast : MonoBehaviour {
     public float shotCooldown = .1f;
     public Camera FPSCam;
     public ParticleSystem muzzelFlash;
+    private AudioSource gunSound;
     private float timer;
     private bool onCooldown = false, isShooting = false;
+    public int ammo = 150;
+
+    private void Start()
+    {
+        gunSound = FPSCam.GetComponent<AudioSource>();
+    }
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && onCooldown == false)
+        if (Input.GetButton("Fire1") && onCooldown == false && ammo > 0)
         {
-            isShooting = true;
+            onCooldown = true;
             muzzelFlash.Play();
+            Shoot();
+
         }
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetAxis("Fire1") == 0 && onCooldown == false || ammo <= 0)
         {
-            isShooting = false;
             muzzelFlash.Stop();
         }
         if (onCooldown == true)
@@ -30,14 +38,11 @@ public class GunRaycast : MonoBehaviour {
                 timer = 0;
             }
         }
-        if(isShooting == true)
-        {
-            Shoot();
-        }
     }
     void Shoot()
     {
-
+        ammo -= 1;
+        gunSound.Play();
         RaycastHit hitInfo;
         if (Physics.Raycast(FPSCam.transform.position, FPSCam.transform.forward, out hitInfo, range))
         {
@@ -46,8 +51,8 @@ public class GunRaycast : MonoBehaviour {
             if (target != null)
             {
                 target.TakeDamage(damage);
-                onCooldown = true;
             }
         }
+        Debug.Log("ammo " + ammo);
     }
 }
