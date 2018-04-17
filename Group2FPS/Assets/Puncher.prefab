@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 136236950046189982}
   - component: {fileID: 114874911614302790}
   - component: {fileID: 114564423166067460}
+  - component: {fileID: 114145299958250380}
+  - component: {fileID: 114734937738091630}
   m_Layer: 0
   m_Name: Puncher
   m_TagString: Player
@@ -510,6 +512,18 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114145299958250380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031472656854860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf4974e813e0d345aba93292056a72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
 --- !u!114 &114285827322236758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -648,6 +662,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62dbd8612752f8241866baf28021fa1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114734937738091630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031472656854860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41654e0a3955e1a42a9644b23830b427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
 --- !u!114 &114874911614302790
 MonoBehaviour:
   m_ObjectHideFlags: 1

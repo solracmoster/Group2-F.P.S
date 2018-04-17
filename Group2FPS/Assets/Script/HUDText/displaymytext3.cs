@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class displaymytext2 : MonoBehaviour {
+public class displaymytext3 : MonoBehaviour {
 
 	// Use this for initialization
-	int coin;
+	int money;
 	void Start () {
-		coin = PlayerPrefs.GetInt ("Coin");
+		money = PlayerPrefs.GetInt ("Money");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		coin = PlayerPrefs.GetInt ("Coin");
-		GetComponent<Text> ().text = "" + coin;
+		money = PlayerPrefs.GetInt ("Money");
+		GetComponent<Text> ().text = "" + money;
 	}
 }

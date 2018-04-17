@@ -23,8 +23,7 @@ GameObject:
   - component: {fileID: 135438597586275322}
   - component: {fileID: 23247522560914870}
   - component: {fileID: 54293787525682100}
-  - component: {fileID: 114148579864156844}
-  - component: {fileID: 114850077850570130}
+  - component: {fileID: 114428610915467292}
   m_Layer: 0
   m_Name: projectile
   m_TagString: Fist
@@ -51,7 +50,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1136621195448094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -101,18 +100,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114148579864156844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1136621195448094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d206e942441ed04fadb75a5437301a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114850077850570130
+--- !u!114 &114428610915467292
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
