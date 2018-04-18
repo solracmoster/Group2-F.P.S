@@ -53,6 +53,6 @@ public class GunRaycast : MonoBehaviour {
                 target.TakeDamage(damage);
             }
         }
-        Debug.Log("ammo " + ammo);
+       
     }
 }

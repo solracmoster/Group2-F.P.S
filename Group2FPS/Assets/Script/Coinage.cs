@@ -6,6 +6,7 @@ public class Coinage : MonoBehaviour {
 	// Use this for initialization
 	
     public int coin = 0;
+
     void Start () {
         //DontDestroyOnLoad(this.gameObject);
         PlayerPrefs.SetInt("Coin", coin);
@@ -26,6 +27,7 @@ public class Coinage : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
             //Soundmanagerscript.PlaySound("Coin");
+            Debug.Log("Coin");
         }
 
        

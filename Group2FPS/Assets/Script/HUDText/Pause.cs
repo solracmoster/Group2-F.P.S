@@ -17,7 +17,13 @@ public class Pause : MonoBehaviour {
             Time.timeScale = 0;
             gameObject.GetComponent<Canvas>().enabled = true;
         }
-	}
+
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            Time.timeScale = 1;
+            gameObject.GetComponent<Canvas>().enabled = false;
+        }
+    }
 
 
     public void Resume(){

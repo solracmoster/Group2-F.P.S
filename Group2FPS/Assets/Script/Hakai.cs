@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Textgone : MonoBehaviour {
+public class Hakai : MonoBehaviour {
 
 	public int health = 1;
 
@@ -27,9 +27,10 @@ public class Textgone : MonoBehaviour {
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("player"))
+            if (other.gameObject.CompareTag("Player"))
             {
                 health--;
             }
+
         }
 }
