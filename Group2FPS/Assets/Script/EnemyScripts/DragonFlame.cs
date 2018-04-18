@@ -25,11 +25,11 @@ public class DragonFlame : MonoBehaviour {
             other.gameObject.GetComponent<PlayerStats>().SetFire(true);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit(Collider collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStats>().SetFire(false);
+            collision.gameObject.GetComponent<PlayerStats>().SetFire(false);
         }
     }
 }

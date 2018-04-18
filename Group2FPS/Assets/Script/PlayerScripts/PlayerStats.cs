@@ -18,10 +18,25 @@ public class PlayerStats : MonoBehaviour {
 		if(inFire == true)
         {
             onFire = true;
+
         }
-        if(onFire == true && fireDamageTimer >= 1)
+        if(onFire == true)
         {
-            
+            fireDamageTimer += Time.deltaTime;
+            if(fireDamageTimer >= 1)
+            {
+                TakeDamage(5);
+                fireDamageTimer = 0;
+            }
+            if(inFire == false)
+            {
+                fireTimer += Time.deltaTime;
+                if(fireTimer >= 5)
+                {
+                    onFire = false;
+                    fireTimer = 0;
+                }
+            }
         }
 	}
 
@@ -32,6 +47,10 @@ public class PlayerStats : MonoBehaviour {
     }
     public void SetFire(bool inFlame)
     {
-        inFire = true;
+        inFire = inFlame;
+        if(inFire == true)
+        {
+            fireTimer = 0;
+        }
     }
 }
