@@ -20,7 +20,7 @@ public class EnemyTakeDamage : MonoBehaviour {
     public void TakeDamage(float damageTaken)
     {
         health = health - damageTaken;
-        gameObject.GetComponent<AdvancedEnemyMovement>().SetHP(health);
+        gameObject.GetComponent<ShootAtPlayer>().SetHP(health);
     }
 
     private void Die()
