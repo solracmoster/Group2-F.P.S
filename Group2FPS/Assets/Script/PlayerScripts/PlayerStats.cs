@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour {
     private int health;
     private bool inFire = false, onFire = false;
     private float fireTimer = 0, fireDamageTimer = 0;
+    public ParticleSystem fireEffect;
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
@@ -34,6 +35,7 @@ public class PlayerStats : MonoBehaviour {
                 if(fireTimer >= 5)
                 {
                     onFire = false;
+                    fireEffect.Stop();
                     fireTimer = 0;
                 }
             }
@@ -51,6 +53,7 @@ public class PlayerStats : MonoBehaviour {
         if(inFire == true)
         {
             fireTimer = 0;
+            fireEffect.Play();
         }
     }
 }
