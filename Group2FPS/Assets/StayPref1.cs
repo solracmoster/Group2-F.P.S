@@ -17,7 +17,7 @@ public class StayPref1 : MonoBehaviour
        
 
         // This line here is just showing the name of the level in the debug log.
-        Debug.Log("Current Level is " + Application.loadedLevelName);
+        //Debug.Log("Current Level is " + Application.loadedLevelName);
     }
 
     // This function creates a small GUI TextArea so we can add whatever value we want to the declared string.
@@ -26,20 +26,28 @@ public class StayPref1 : MonoBehaviour
     // In the update function I'm just making it possible to iterate the Int and Float variables.
     void Update()
     {
-        //if (Input.GetButtonUp("Fire1"))
+       // if (Input.GetButtonUp("Fire1"))
        // {
-        //    money++;
+
+            //money++;
+            //PlayerPrefs.SetInt("Money", 0);
+            
         //}
 
+       //if (Input.GetButtonUp("Fire1"))
+       // {
+       //    money++;
+       //}
 
-        // Here I have it so what when you press the space bar you "save" the variables and load the next level.
-        // This is done by the "Set" member of the class. Essentially its "setting" the value of our variable to the playerpref.
-        //if (Input.GetButtonUp("Jump"))
-        //{
-        //    PlayerPrefs.SetInt("Money", money);
-           
 
-           
+       // Here I have it so what when you press the space bar you "save" the variables and load the next level.
+       // This is done by the "Set" member of the class. Essentially its "setting" the value of our variable to the playerpref.
+       //if (Input.GetButtonUp("Jump"))
+       //{
+       //    PlayerPrefs.SetInt("Money", money);
+
+
+
        // }
     }
     void OnTriggerEnter(Collider other)

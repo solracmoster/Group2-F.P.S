@@ -47,11 +47,11 @@ public class PlayerHealthy : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("HP"))
-        {
-            PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health") + 1);
+       // if (other.gameObject.CompareTag("HP"))
+       // {
+        //    PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health") + 1);
             //Soundmanagerscript.PlaySound("NHP");
-        }
+        //}
        // if (other.gameObject.CompareTag("Coin"))
         //{
           //  PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
