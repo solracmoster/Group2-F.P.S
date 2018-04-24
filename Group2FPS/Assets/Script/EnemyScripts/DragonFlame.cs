@@ -5,6 +5,8 @@ using UnityEngine;
 public class DragonFlame : MonoBehaviour {
     private float timer = 0;
     public float duration = 5;
+    public GameObject dragon = null;
+    private bool done = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +18,11 @@ public class DragonFlame : MonoBehaviour {
         if(timer >= duration)
         {
             Destroy(gameObject);
+        }
+        if(done == false && dragon != null)
+        {
+            done = true;
+            dragon.GetComponent<Dragon>().GetAttackDuration(duration);
         }
 	}
     private void OnTriggerEnter(Collider other)
@@ -31,5 +38,9 @@ public class DragonFlame : MonoBehaviour {
         {
             collision.gameObject.GetComponent<PlayerStats>().SetFire(false);
         }
+    }
+    public void FindDragon(GameObject drag)
+    {
+        dragon = drag;
     }
 }

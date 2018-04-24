@@ -149,7 +149,7 @@ ModelImporter:
       name: PigIdle
       takeName: Armature|ArmatureAction
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 0
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
