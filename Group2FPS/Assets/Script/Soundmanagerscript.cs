@@ -5,7 +5,7 @@ using UnityEngine;
 public class Soundmanagerscript : MonoBehaviour {
     // to add a sound put its name use a , after a sound to add another                                           //script set up with "shootp" so you can test if it works
     //ex: public st...shootpSound, JumpSound;
-    public static AudioClip shootpSound;
+    public static AudioClip Death, Punch1, Punch2, Whiff1, Whiff2, Hit, Hop, Halt, Run ;
 
     //don't touch
     static AudioSource audioSrc;
@@ -15,8 +15,17 @@ public class Soundmanagerscript : MonoBehaviour {
     //In order to add another sound (the one you put above) copy, paste and replace and place below.
    //ex:JumpSound = Resources.Load<AudioClip>("Jump");
 
-        shootpSound = Resources.Load<AudioClip>("shootp");
-        
+        Death = Resources.Load<AudioClip>("Death");
+        Punch1 = Resources.Load<AudioClip>("Punch1");
+        Punch2 = Resources.Load<AudioClip>("Punch2");
+        Whiff1 = Resources.Load<AudioClip>("Whiff1");
+        Whiff2 = Resources.Load<AudioClip>("Whiff2");
+        Hit = Resources.Load<AudioClip>("Hit");
+        Hop = Resources.Load<AudioClip>("Hop");
+        Halt = Resources.Load<AudioClip>("Halt");
+        Run = Resources.Load<AudioClip>("Run");
+
+
 
         // don't touch
         audioSrc = GetComponent<AudioSource>();
@@ -43,11 +52,59 @@ public class Soundmanagerscript : MonoBehaviour {
     {
         switch (clip)
         {
-            case "shootp":
-                audioSrc.PlayOneShot(shootpSound);
+            case "Death":
+                audioSrc.PlayOneShot(Death);
                 break;
         }
-       
+        switch (clip)
+        {
+            case "Punch1":
+                audioSrc.PlayOneShot(Punch1);
+                break;
+        }
+        switch (clip)
+        {
+            case "Punch2":
+                audioSrc.PlayOneShot(Punch2);
+                break;
+        }
+        switch (clip)
+        {
+            case "Whiff1":
+                audioSrc.PlayOneShot(Whiff1);
+                break;
+        }
+        switch (clip)
+        {
+            case "Whiff2":
+                audioSrc.PlayOneShot(Whiff2);
+                break;
+        }
+        switch (clip)
+        {
+            case "Hit":
+                audioSrc.PlayOneShot(Hit);
+                break;
+        }
+        switch (clip)
+        {
+            case "Hop":
+                audioSrc.PlayOneShot(Hop);
+                break;
+        }
+        switch (clip)
+        {
+            case "Halt":
+                audioSrc.PlayOneShot(Halt);
+                break;
+        }
+        switch (clip)
+        {
+            case "Run":
+                audioSrc.PlayOneShot(Run);
+                break;
+        }
+
         //  ex:           switch (clip)
         //             {
         //                 case "JumpSound":

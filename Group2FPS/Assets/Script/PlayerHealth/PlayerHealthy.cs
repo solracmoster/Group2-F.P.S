@@ -18,6 +18,7 @@ public class PlayerHealthy : MonoBehaviour {
         
         if (PlayerPrefs.GetInt("Health") <= 0)
         {
+            Soundmanagerscript.PlaySound("Death");
             //reload the scene
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene("Testz");
@@ -34,7 +35,7 @@ public class PlayerHealthy : MonoBehaviour {
 
         if (collision.gameObject.tag == "Enemy") {
 			PlayerPrefs.SetInt ("Health", PlayerPrefs.GetInt ("Health") - 1);
-            //Soundmanagerscript.PlaySound("NHurt");
+            Soundmanagerscript.PlaySound("Death");
         }
 
 		
