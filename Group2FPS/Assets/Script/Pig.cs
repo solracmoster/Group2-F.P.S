@@ -19,13 +19,13 @@ public class Pig : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         lookDirection = player.transform.position - transform.position;
+        lookDirection.y = 0;
         lookRot = Quaternion.LookRotation(lookDirection);
         lookRot *= Quaternion.Euler(0, 270, 0);
-        distance = (gameObject.transform.position - player.transform.position).magnitude;
+        distance = (player.transform.position - gameObject.transform.position).magnitude;
         if (distance <= triggerDistance)
         {
             RunAway();
-            //gameObject.transform.rotation = new Quaternion(lookRot.x, (lookRot.y + 90) * -1, lookRot.z, lookRot.w);
 
         }
         if(distance > triggerDistance)
@@ -43,5 +43,18 @@ public class Pig : MonoBehaviour {
     {
         agent.destination = agent.destination = gameObject.transform.position;
         anim.SetBool("isWalking", false);
+        gameObject.transform.rotation = transform.rotation;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Fist")
+        {
+            Punched();
+        }
+    }
+    public void Punched()
+    {
+        Vector3 PunchDirection = player.transform.position - gameObject.transform.position;
+        GetComponent<Rigidbody>().velocity = PunchDirection;
     }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-public class Fend1: MonoBehaviour {
+public class P2 : MonoBehaviour {
 
 	//public int health = 1;
 
@@ -20,10 +20,10 @@ public class Fend1: MonoBehaviour {
 
 
     void OnTriggerEnter(Collider other) {
-		if (other.gameObject.CompareTag ("P1")) {
+		if (other.gameObject.CompareTag ("Player")) {
             //when the player runs into an enemy reduce the players health
             Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("Fend1");
+            SceneManager.LoadScene("Testz");
             //health--;
 
         }
