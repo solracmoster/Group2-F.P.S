@@ -20,5 +20,26 @@ public class Melee : MonoBehaviour
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
             rb.velocity = Camera.main.transform.forward * 20;
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Soundmanagerscript.PlaySound("Whiff1");
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Soundmanagerscript.PlaySound("Whiff2");
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            Soundmanagerscript.PlaySound("Hop");
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Soundmanagerscript.PlaySound("Halt");
+        }
+        if (Input.GetKeyDown("w"))
+        {
+            Soundmanagerscript.PlaySound("Run");
+        }
     }
 }
