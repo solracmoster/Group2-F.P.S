@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class Trackdead : MonoBehaviour {
+public class TrackerHelp : MonoBehaviour {
 
 	// Use this for initialization
 	int Tracker1;
