@@ -13,6 +13,7 @@ public class Destructible1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Fist")
         {
+            Soundmanagerscript.PlaySound("Glass");
             // Spawn a shattered object
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             // Remove the current object
