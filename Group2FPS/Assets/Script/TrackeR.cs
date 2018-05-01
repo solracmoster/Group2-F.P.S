@@ -22,7 +22,7 @@ public class TrackeR : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Coin"))
+        if (other.gameObject.CompareTag("Track1"))
         {
             Track1++;
             PlayerPrefs.SetInt("Track1", Track1);

@@ -29,7 +29,7 @@ public class PlayerHealthy : MonoBehaviour {
     }
     
 
-			void OnCollisionEnter (Collision collision)
+	void OnCollisionEnter (Collision collision)
 	{
        
 

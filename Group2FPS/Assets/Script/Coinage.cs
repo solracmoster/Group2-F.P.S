@@ -26,11 +26,26 @@ public class Coinage : MonoBehaviour {
         if (other.gameObject.CompareTag("Coin"))
         {
             PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
-            //Soundmanagerscript.PlaySound("Coin");
+            Soundmanagerscript.PlaySound("Coin");
+            
+
             Debug.Log("Coin");
         }
 
        
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") - 1);
+            Soundmanagerscript.PlaySound("Death");
+            Soundmanagerscript.PlaySound("Drop");
+        }
+
     }
 
 }

@@ -8,6 +8,9 @@ TagManager:
   - Arrow
   - DragonCave
   - Pig
+  - Coin
+  - Enemy
+  - Track1
   layers:
   - Default
   - TransparentFX
