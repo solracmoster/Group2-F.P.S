@@ -9,6 +9,7 @@ TagManager:
   - DragonCave
   - Pig
   - setFire
+  - Bird
   layers:
   - Default
   - TransparentFX

@@ -83,9 +83,14 @@ public class Dragon : MonoBehaviour {
     }
     public void Ded()
     {
+        player.GetComponent<LoadNextScene>().DragonDead();
         Instantiate(deathEffect);
         deathEffect.transform.position = gameObject.transform.position;
         FlameShot.GetComponent<DragonFlame>().Dead();
+        DestroyDragon();
+    }
+    private void DestroyDragon()
+    {
         Destroy(gameObject);
     }
 
