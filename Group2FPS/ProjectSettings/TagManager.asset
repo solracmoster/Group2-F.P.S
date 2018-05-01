@@ -8,9 +8,13 @@ TagManager:
   - Arrow
   - DragonCave
   - Pig
+<<<<<<< HEAD
   - Coin
   - Enemy
   - Track1
+=======
+  - setFire
+>>>>>>> 306abf13f513d0a6881c26e20f2ca23b11be2a55
   layers:
   - Default
   - TransparentFX

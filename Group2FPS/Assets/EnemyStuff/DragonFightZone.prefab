@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 65321433186586374}
   - component: {fileID: 23584992787850948}
   - component: {fileID: 114451374491187802}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DragonFightZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

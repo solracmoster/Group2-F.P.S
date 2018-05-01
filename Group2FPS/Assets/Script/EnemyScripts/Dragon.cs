@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dragon : MonoBehaviour {
-    public GameObject flamePrefab, player, firePoint;
+    public GameObject flamePrefab, player, firePoint, WeakPoint, deathEffect;
+    private GameObject FlameShot;
     public float distanceToActivate = 100, attackCooldown = 10;
     private Vector3 playerPos, lookDirection;
     private float distance, attackTimer = 100;
@@ -30,7 +31,8 @@ public class Dragon : MonoBehaviour {
                 if (attackTimer >= attackDuration)
                 {
                     anim.SetBool("isOpen", false);
-                    if(canRotate == true)
+                    WeakPoint.GetComponent<DragonWeakPoint>().Open(false);
+                    if (canRotate == true)
                     {
                         lookDirection = playerPos - transform.position;
                         lookRot = Quaternion.LookRotation(lookDirection);
@@ -43,11 +45,13 @@ public class Dragon : MonoBehaviour {
            if(attackTimer >= attackCooldown || canAttack == true) 
             {
                 anim.SetBool("isOpen", true);
+                WeakPoint.GetComponent<DragonWeakPoint>().Open(true);
                 canAttack = true;
                 attackTimer = 0;
                 attackprepTimer += Time.deltaTime;
-                if(attackprepTimer > .5f)
+                if(attackprepTimer > .8f)
                 {
+                    WeakPoint.GetComponent<DragonWeakPoint>().Open(true);
                     Attack(1);
                     attackprepTimer = 0;
                     canAttack = false;
@@ -65,7 +69,7 @@ public class Dragon : MonoBehaviour {
         if (attackNum == 1)
         {
             Quaternion flameRot = Quaternion.LookRotation(lookDirection);
-            GameObject FlameShot = Instantiate(flamePrefab, firePoint.transform.position, flameRot);
+            FlameShot = Instantiate(flamePrefab, firePoint.transform.position, flameRot);
             FlameShot.GetComponent<DragonFlame>().FindDragon(gameObject);
         }
     }
@@ -76,6 +80,13 @@ public class Dragon : MonoBehaviour {
     public void PlayerInZone(bool inZone)
     {
         canRotate = inZone;
+    }
+    public void Ded()
+    {
+        Instantiate(deathEffect);
+        deathEffect.transform.position = gameObject.transform.position;
+        FlameShot.GetComponent<DragonFlame>().Dead();
+        Destroy(gameObject);
     }
 
 }

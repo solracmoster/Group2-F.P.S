@@ -52,6 +52,10 @@ public class GunRaycast : MonoBehaviour {
             {
                 target.TakeDamage(damage);
             }
+            if(hitInfo.transform.name == "WeakPoint")
+            {
+                hitInfo.transform.GetComponent<DragonWeakPoint>().TakeDamage(damage);
+            }
         }
        
     }

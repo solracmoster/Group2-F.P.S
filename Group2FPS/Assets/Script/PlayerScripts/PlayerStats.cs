@@ -26,7 +26,14 @@ public class PlayerStats : MonoBehaviour {
             fireDamageTimer += Time.deltaTime;
             if(fireDamageTimer >= 1)
             {
-                TakeDamage(2);
+                if(inFire == true)
+                {
+                    TakeDamage(4);
+                }
+                if(inFire == false)
+                {
+                    TakeDamage(2);
+                }
                 fireDamageTimer = 0;
             }
             if(inFire == false)
@@ -54,6 +61,13 @@ public class PlayerStats : MonoBehaviour {
         {
             fireTimer = 0;
             fireEffect.Play();
+        }
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "setFire")
+        {
+            SetFire(false);
         }
     }
 }
