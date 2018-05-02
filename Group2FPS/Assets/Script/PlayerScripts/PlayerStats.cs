@@ -52,7 +52,7 @@ public class PlayerStats : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         health = health - damage;
-        Debug.Log(health);
+        Debug.Log("Health" + health);
     }
     public void SetFire(bool inFlame)
     {

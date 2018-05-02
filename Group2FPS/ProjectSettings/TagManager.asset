@@ -3,11 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Enemy
   - Fist
   - Coin
   - bullet
+=======
+  tags: []
+>>>>>>> fd327d508a2eceb28823817c9b03c1af2f1592d0
   layers:
   - Default
   - TransparentFX
