@@ -23,12 +23,10 @@ public class DragonWeakPoint : MonoBehaviour {
         {
             health -= damage;
         }
-        Debug.Log("dragonHP " + health);
     }
     public void Open(bool isOpen)
     {
         open = isOpen;
-        Debug.Log("open " + open);
     }
     
 }

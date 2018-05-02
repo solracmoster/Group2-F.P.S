@@ -4,21 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fist
-  - Arrow
-  - DragonCave
-  - Pig
-<<<<<<< HEAD
   - Coin
+  - Fist
   - Enemy
-  - Track1
-=======
-  - setFire
-<<<<<<< HEAD
-  - Bird
-=======
->>>>>>> 306abf13f513d0a6881c26e20f2ca23b11be2a55
->>>>>>> 7705af83163b1bcf518f09712acf3dc124a2c280
   layers:
   - Default
   - TransparentFX
