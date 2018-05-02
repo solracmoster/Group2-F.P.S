@@ -113,7 +113,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 89e3c71e9f0c01a4180708dd9643a84b, type: 2}
 --- !u!1 &64706126
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +803,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1984989121}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 375e41a12ccfea948a49539f3740aef8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: e8502a116de71194c8bcd229c6099dce, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1984989123
 Terrain:
@@ -813,7 +813,7 @@ Terrain:
   m_GameObject: {fileID: 1984989121}
   m_Enabled: 1
   serializedVersion: 3
-  m_TerrainData: {fileID: 15600000, guid: 375e41a12ccfea948a49539f3740aef8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: e8502a116de71194c8bcd229c6099dce, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
