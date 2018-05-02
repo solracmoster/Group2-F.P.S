@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 114734958203372818}
   - component: {fileID: 81043666569344316}
   - component: {fileID: 114262153868226968}
+  - component: {fileID: 114742221497150118}
   m_Layer: 0
   m_Name: FPSControllerWithAK47
   m_TagString: Player
@@ -127,8 +128,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1959934316186938}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 32.62, y: 1.37, z: -18.885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -74.12596, y: -14.555802, z: -24.82824}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4450865994983908}
@@ -545,7 +546,7 @@ MonoBehaviour:
     ForwardSpeed: 8
     BackwardSpeed: 8
     StrafeSpeed: 8
-    RunMultiplier: 2
+    RunMultiplier: 0
     RunKey: 304
     JumpForce: 70
     SlopeCurveModifier:
@@ -588,6 +589,18 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &114742221497150118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959934316186938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51442d92773c4b54a9f7951d77c4760a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endScene: 
 --- !u!114 &114867359023558708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -600,11 +613,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  range: 100
+  range: 1000
   shotCooldown: 0.1
   FPSCam: {fileID: 20589920838502458}
   muzzelFlash: {fileID: 198137237881385486}
-  ammo: 150
+  ammo: 99999
 --- !u!124 &124913766358978350
 Behaviour:
   m_ObjectHideFlags: 1
