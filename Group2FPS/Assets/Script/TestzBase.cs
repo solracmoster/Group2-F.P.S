@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-public class P2 : MonoBehaviour {
+public class TestzBase : MonoBehaviour {
 
 	//public int health = 1;
 
@@ -23,7 +23,7 @@ public class P2 : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Player")) {
             //when the player runs into an enemy reduce the players health
             Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("Testz");
+            SceneManager.LoadScene("Testz Base");
             //health--;
 
         }

@@ -4,14 +4,14 @@ using UnityEngine.UI;
 public class displaymytext3 : MonoBehaviour {
 
 	// Use this for initialization
-	int money;
+	int coin;
 	void Start () {
-		money = PlayerPrefs.GetInt ("Money");
+		coin = PlayerPrefs.GetInt ("Coin");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		money = PlayerPrefs.GetInt ("Money");
-		GetComponent<Text> ().text = "" + money;
+		coin = PlayerPrefs.GetInt ("Coin");
+		GetComponent<Text> ().text = "" + coin;
 	}
 }

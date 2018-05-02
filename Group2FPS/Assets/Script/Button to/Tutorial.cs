@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class ButtonLoad1 : MonoBehaviour {
+public class Tutorial : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
