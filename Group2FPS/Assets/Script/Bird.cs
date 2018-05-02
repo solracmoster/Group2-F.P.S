@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         startPos = gameObject.transform.position;
+        rot = transform.rotation;
 	}
 	
 	// Update is called once per frame
@@ -25,11 +26,12 @@ public class Bird : MonoBehaviour {
         {
             transform.position += transform.forward * -moveSpeed;
             distance = (transform.position - startPos).magnitude;
-            rot = transform.rotation;
+            rot.y = 0;
             gameObject.transform.rotation = rot;
             if (distance >= maxDistance)
             {
-                startPos = transform.position;
+                distance = 0;
+                startPos = gameObject.transform.position;
                 changeDirection = true;
             }
         }
@@ -37,12 +39,12 @@ public class Bird : MonoBehaviour {
         {
             transform.position += transform.forward * -moveSpeed;
             distance = (transform.position - startPos).magnitude;
-            rot = transform.rotation;
             rot.y = 180;
             gameObject.transform.rotation = rot;
             if (distance >= maxDistance)
             {
-                startPos = transform.position;
+                distance = 0;
+                startPos = gameObject.transform.position;
                 changeDirection = false;
             }
         }

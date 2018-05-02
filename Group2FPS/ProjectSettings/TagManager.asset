@@ -4,14 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Coin
-  - Fist
-  - Enemy
-=======
   - Enemy
   - Fist
->>>>>>> 6a3c3ef5581ebf1b3a24ce28798e57de5d03c578
   layers:
   - Default
   - TransparentFX
