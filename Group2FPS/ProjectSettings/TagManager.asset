@@ -3,9 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Enemy
   - Fist
+=======
+  tags: []
+>>>>>>> 0d26f5bd8a38371c57dba1d3a9e94cd4950dcabb
   layers:
   - Default
   - TransparentFX

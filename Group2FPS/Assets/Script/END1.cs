@@ -26,7 +26,7 @@ public class END1: MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.tag == "player") {
+        if (collision.gameObject.tag == "Player") {
             health--;
             // Soundmanagerscript.PlaySound("PHurt");
         }
