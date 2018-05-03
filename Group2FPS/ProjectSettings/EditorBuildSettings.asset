@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Actual Game Scenes/Tutorial.unity
     guid: f2e1a08b9b38af54189a5afeaa263565
+  - enabled: 1
+    path: Assets/Actual Game Scenes/Story1.unity
+    guid: f0726bded9f86504aae5da22e752aa43

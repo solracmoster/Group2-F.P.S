@@ -11,7 +11,7 @@ public class Destructible1 : MonoBehaviour
     // If the player clicks on the object
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Fist")
+        if (collision.gameObject.tag == "Fist" || collision.gameObject.tag == "bullet")
         {
             Soundmanagerscript.PlaySound("Glass");
             // Spawn a shattered object
