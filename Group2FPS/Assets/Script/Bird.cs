@@ -51,15 +51,21 @@ public class Bird : MonoBehaviour {
 
 
 	}
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "bullet")
+        {
+            TakeDamage(1);
+        }
+    }
     public void TakeDamage(float damageTaken)
     {
         health -= damageTaken;
-        Debug.Log("bird HP " + health);
     }
     private void Dead()
     {
         Instantiate(deathEffect, gameObject.transform.position, transform.rotation);
-        Debug.Log("kill bird mission complete");
+        Debug.Log("Bird has been Killed");
         Destroy(gameObject);
     }
 }
