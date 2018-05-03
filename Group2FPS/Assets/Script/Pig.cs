@@ -59,6 +59,8 @@ public class Pig : MonoBehaviour {
             on = false;
             Instantiate(effect, gameObject.transform.position, effect.transform.rotation);
             Debug.Log("InPen");
+            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 5);
+            Soundmanagerscript.PlaySound("Coin");
         }
     }
 }
