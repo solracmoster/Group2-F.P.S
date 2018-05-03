@@ -1170,6 +1170,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce32b2bc5c3113747b2f21415c322da1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &462096503
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.5661316
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.6955519
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539912821623662, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: adf0d7325a6270b47b62d5c8f771df41, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &487174051 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1331971868998302, guid: dc7f476b5059fee43b8d37e2eb335d23,
