@@ -11,6 +11,7 @@ public class Pig : MonoBehaviour {
     private Vector3 lookDirection;
     private Quaternion lookRot;
     private bool on = true;
+    public GameObject effect;
     // Use this for initialization
     void Start () {
         anim = GetComponentInChildren<Animator>();
@@ -53,7 +54,11 @@ public class Pig : MonoBehaviour {
     }
     public void InPen()
     {
-        on = false;
-        Debug.Log("InPen");
+        if(on == true)
+        {
+            on = false;
+            Instantiate(effect, gameObject.transform.position, effect.transform.rotation);
+            Debug.Log("InPen");
+        }
     }
 }

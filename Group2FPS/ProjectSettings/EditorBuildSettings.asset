@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Actual Game Scenes/EndingScene.unity
     guid: 8c8a4feacde6c2742af2b1bcb84c0102
+  - enabled: 1
+    path: Assets/lose.unity
+    guid: 145b16382167f3f4b843adab24065982

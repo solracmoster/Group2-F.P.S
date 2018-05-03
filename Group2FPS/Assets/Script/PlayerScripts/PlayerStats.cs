@@ -52,6 +52,10 @@ public class PlayerStats : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         health = health - damage;
+        if(health <= 0)
+        {
+            SceneManager.LoadScene("lose");
+        }
         Debug.Log("Health" + health);
     }
     public void SetFire(bool inFlame)

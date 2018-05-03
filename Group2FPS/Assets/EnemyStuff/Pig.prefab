@@ -834,6 +834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   triggerDistance: 50
+  effect: {fileID: 1908056244619000, guid: bfe1a24034e44ec4eb3904bf9d6394c1, type: 2}
 --- !u!137 &137287704757250546
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
