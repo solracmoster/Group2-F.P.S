@@ -64,7 +64,7 @@ public class Bird : MonoBehaviour {
     }
     private void Dead()
     {
-        PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 5);
+        PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 10);
         Soundmanagerscript.PlaySound("Coin");
         Instantiate(deathEffect, gameObject.transform.position, transform.rotation);
         Debug.Log("Bird has been Killed");
