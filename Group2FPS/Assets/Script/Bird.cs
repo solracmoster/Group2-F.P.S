@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         startPos = gameObject.transform.position;
+        rot = transform.rotation;
 	}
 	
 	// Update is called once per frame
@@ -25,11 +26,12 @@ public class Bird : MonoBehaviour {
         {
             transform.position += transform.forward * -moveSpeed;
             distance = (transform.position - startPos).magnitude;
-            rot = transform.rotation;
+            rot.y = 0;
             gameObject.transform.rotation = rot;
             if (distance >= maxDistance)
             {
-                startPos = transform.position;
+                distance = 0;
+                startPos = gameObject.transform.position;
                 changeDirection = true;
             }
         }
@@ -37,27 +39,33 @@ public class Bird : MonoBehaviour {
         {
             transform.position += transform.forward * -moveSpeed;
             distance = (transform.position - startPos).magnitude;
-            rot = transform.rotation;
             rot.y = 180;
             gameObject.transform.rotation = rot;
             if (distance >= maxDistance)
             {
-                startPos = transform.position;
+                distance = 0;
+                startPos = gameObject.transform.position;
                 changeDirection = false;
             }
         }
 
 
 	}
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "bullet")
+        {
+            TakeDamage(1);
+        }
+    }
     public void TakeDamage(float damageTaken)
     {
         health -= damageTaken;
-        Debug.Log("bird HP " + health);
     }
     private void Dead()
     {
         Instantiate(deathEffect, gameObject.transform.position, transform.rotation);
-        Debug.Log("kill bird mission complete");
+        Debug.Log("Bird has been Killed");
         Destroy(gameObject);
     }
 }
