@@ -4,31 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Scenes: []
-=======
   m_Scenes:
   - enabled: 1
-    path: Assets/Actual Game Scenes/Title.unity
-    guid: 19f4a4dc3a9b78a4f8d9579c0c419b13
+    path: Assets/Actual Game Scenes/World.unity
+    guid: 955aef1734e53214b88881d8d106551e
   - enabled: 1
     path: Assets/Actual Game Scenes/Tutorial.unity
     guid: f2e1a08b9b38af54189a5afeaa263565
   - enabled: 1
-<<<<<<< HEAD
+    path: Assets/Actual Game Scenes/Title.unity
+    guid: 19f4a4dc3a9b78a4f8d9579c0c419b13
+  - enabled: 1
     path: Assets/Actual Game Scenes/Story1.unity
     guid: f0726bded9f86504aae5da22e752aa43
-=======
-    path: Assets/Actual Game Scenes/FinalBoss.unity
-    guid: 6cea4d9c716e9094c92c48588ad3fb2c
-  - enabled: 1
-    path: Assets/Actual Game Scenes/EndingScene.unity
-    guid: 8c8a4feacde6c2742af2b1bcb84c0102
-<<<<<<< HEAD
-  - enabled: 1
-    path: Assets/lose.unity
-    guid: 145b16382167f3f4b843adab24065982
-=======
->>>>>>> d2ffaa0a75ceca645b7aad75a570549ebbef521e
->>>>>>> cc8416af4f02b90a1db7f15636f97b3b8d5d892a
->>>>>>> 5d9035f5f9ee1c1fc4fac7e9bd9256d556395451
