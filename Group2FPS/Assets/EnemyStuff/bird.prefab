@@ -771,7 +771,7 @@ MonoBehaviour:
   moveSpeed: 0.3
   maxDistance: 100
   health: 1
-  deathEffect: {fileID: 1671138651253618, guid: 2c8068f11d0e6a34eb65778404b68e7b,
+  deathEffect: {fileID: 1378157467914762, guid: cc0cdf849684cc74cb9f7940a6914ffd,
     type: 2}
 --- !u!135 &135773328999439932
 SphereCollider:
