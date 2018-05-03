@@ -43,4 +43,8 @@ public class DragonFlame : MonoBehaviour {
     {
         dragon = drag;
     }
+    public void Dead()
+    {
+        Destroy(gameObject);
+    }
 }

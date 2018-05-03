@@ -10,6 +10,7 @@ public class Pig : MonoBehaviour {
     public float triggerDistance = 10;
     private Vector3 lookDirection;
     private Quaternion lookRot;
+    private bool on = true;
     // Use this for initialization
     void Start () {
         anim = GetComponentInChildren<Animator>();
@@ -23,14 +24,19 @@ public class Pig : MonoBehaviour {
         lookRot = Quaternion.LookRotation(lookDirection);
         lookRot *= Quaternion.Euler(0, 270, 0);
         distance = (player.transform.position - gameObject.transform.position).magnitude;
-        if (distance <= triggerDistance)
+        if (distance <= triggerDistance && on == true)
         {
             RunAway();
 
         }
-        if(distance > triggerDistance)
+        if(distance > triggerDistance && on == true)
         {
             idle();
+        }
+        if(on == false)
+        {
+            idle();
+            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
     }
     private void RunAway()
@@ -45,16 +51,9 @@ public class Pig : MonoBehaviour {
         anim.SetBool("isWalking", false);
         gameObject.transform.rotation = transform.rotation;
     }
-    private void OnTriggerEnter(Collider other)
+    public void InPen()
     {
-        if(other.gameObject.tag == "Fist")
-        {
-            Punched();
-        }
-    }
-    public void Punched()
-    {
-        Vector3 PunchDirection = player.transform.position - gameObject.transform.position;
-        GetComponent<Rigidbody>().velocity = PunchDirection;
+        on = false;
+        Debug.Log("InPen");
     }
 }

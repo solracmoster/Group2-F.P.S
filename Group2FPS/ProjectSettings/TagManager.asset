@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Fist
-  - Arrow
-  - DragonCave
-  - Pig
+  tags: []
   layers:
   - Default
   - TransparentFX
