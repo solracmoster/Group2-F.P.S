@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Pig
+=======
+  - Coin
+>>>>>>> 40b1caf9865abeeb82b7c089d7a5f742a859e07c
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Fist
   - 
   - 
   - 
