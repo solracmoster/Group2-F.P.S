@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Bird
-  - Pig
->>>>>>> b3a0c07ba2fa42d55b3467d8df6a26efa88db208
   layers:
   - Default
   - TransparentFX
