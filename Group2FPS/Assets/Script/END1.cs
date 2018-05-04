@@ -16,7 +16,7 @@ public class END1: MonoBehaviour {
         {
             //reload the scene
             Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("Story2");
 
 
 
