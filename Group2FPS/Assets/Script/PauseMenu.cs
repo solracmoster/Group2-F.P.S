@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour {
             Time.timeScale = 0;
             gameObject.GetComponent<Canvas>().enabled = true;
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2))
         {
             Time.timeScale = 1;
 

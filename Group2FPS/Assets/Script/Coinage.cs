@@ -16,9 +16,16 @@ public class Coinage : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-          
+        if (Input.GetKeyDown ("p"))
+        {
+            //reload the scene
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene("Tutorial");
+
+        }
+
     }
-    
+
 
     void OnTriggerEnter(Collider other)
     {
