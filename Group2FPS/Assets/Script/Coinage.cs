@@ -23,6 +23,13 @@ public class Coinage : MonoBehaviour {
             SceneManager.LoadScene("Tutorial");
 
         }
+        if (Input.GetKeyDown("o"))
+        {
+            //reload the scene
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene("Title");
+
+        }
 
     }
 
